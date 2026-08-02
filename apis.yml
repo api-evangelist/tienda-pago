@@ -1,8 +1,24 @@
 aid: tienda-pago
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tienda-pago.png
 name: Tienda Pago
-description: 'Tienda Pago is a company surfaced as a portfolio company of qed-investors and added to the
-  API Evangelist network as a stub for enrichment. Sector: lending. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Tienda Pago is a fintech lender providing working capital and short-term
+  inventory financing to small retailers - bodegas, convenience stores, bars and restaurants -
+  across Mexico and Peru. Operating as a non-regulated financial entity (SOFOM E.N.R.), it offers
+  three core products: LanaYa instant cash deposits, buy-now-pay-later 7-day terms for buying inventory
+  from distributors, and no-upfront-cash mobile phone top-up (recargas). The platform reports serving
+  over 80,000 businesses and more than 18 million families through mobile apps and a web onboarding portal.
+  It is backed by QED Investors. No public API, developer portal, or SDK surface has been identified.'
 url: https://raw.githubusercontent.com/api-evangelist/tienda-pago/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Lending
+- Fintech
+- Payments
+- Working Capital
+- Buy Now Pay Later
+- Mexico
+- Peru
+- Small Business
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tienda-pago-domain-security.yml
 - type: Website
-  url: http://tiendapago.com
+  url: https://tiendapago.com
+- type: SignUp
+  url: https://onboarding.tiendapago.net/es-MX/auth
+- type: PrivacyPolicy
+  url: https://tiendapago.com/es-MX/privacy
+- type: TermsOfService
+  url: https://tiendapago.com/es-MX/contract
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
